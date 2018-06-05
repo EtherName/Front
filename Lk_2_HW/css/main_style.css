@@ -1,0 +1,124 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: auto;
+	width: 1062px;
+	font-family: Georgia, serif;
+	color: #626262;
+	/*font-family: Times New Roman;*/
+}
+
+.span_link {
+	color: red;
+	text-decoration: underline;
+}
+
+.blockquote {
+	text-align: center;
+}
+.paragraf h1 {
+	font-family: Times New Roman, Arial, sans-serif;
+}
+
+blockquote cite {
+	text-transform: uppercase;
+	color: #b4ad9e;
+}
+.some_text {
+	margin: 55px 0 0 0;
+	text-transform: uppercase;
+	color: #b4ad9e;
+}
+
+header img {
+	margin: 83px auto 62px auto;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header-box {
+	text-transform: uppercase;
+	margin: 0 auto 40px auto;
+	text-align: center;
+}
+
+.header-value {
+	margin: 0 102px 0 0;
+}
+
+.header-value:hover {
+	color: red;
+}
+
+.footer-box {
+	float: right;
+	margin: 0 70px 0 0;
+}
+
+.f_card {
+	position: relative;
+    display: inline-block;
+}
+
+.f_card .f_red {
+	display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.f_card:hover .f_red {
+	display: inline;
+}
+
+.t_card {
+	position: relative;
+    display: inline-block;
+}
+
+.t_card .t_red {
+	display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.t_card:hover .t_red {
+	display: inline;
+}
+
+.i_card {
+	position: relative;
+    display: inline-block;
+}
+
+.i_card .i_red {
+	display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+.i_card:hover .i_red {
+	display: inline;
+}
+
+.footer-box b {
+	margin: 40px 25px 0 0;
+}
+
+.footer-box a {
+	margin: 40px 0 0 19px;
+}
+
+footer {
+	position: absolute;
+	left: 0px;
+    height:97px;
+    width: 100%;
+	margin: 105px 0 0 0;
+	background: #f0f0f0;
+}
