@@ -8,6 +8,8 @@ body {
 	color: #333333;
 	margin: 0;
 	padding: 0;
+	background-image: url('../images/background.jpg');
+	background-repeat: repeat;
 }
 
 img {
@@ -64,20 +66,116 @@ img {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-brush:before {
+/*.icon-brush:before {
   content: "\e900";
   margin: 5px;
   padding: 10px;
   color: #fff;
   border: 1px solid #9884aa; 
   border-radius: 50%;
+  vertical-align: middle;
+}*/
+
+.float {
+	overflow: hidden;
+    height: auto;
+    text-align: center;
+    vertical-align: middle;
+    margin: 0 0 20px;
 }
+
+
+.logo {
+	vertical-align: middle;
+	float: left;
+	padding: 0;
+	margin: auto 0;
+	overflow: hidden;
+}
+
+.logo a {
+	padding: 0;
+	margin: 0;
+	vertical-align: middle;
+}
+
+.nav {
+	transform: translateY(+30%);
+	margin: 0;
+	padding: 0;
+	float:  right;
+	list-style: none;
+	list-style-type: none;
+	vertical-align: middle;
+	overflow: hidden;
+}
+
+.nav ul {
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.nav li {
+	overflow: hidden;
+	float: left;
+	margin: 0 0 0 10px;
+	padding: 0 0 10px;
+}
+
+.nav li a {
+	text-transform: uppercase;
+	color: #fff;
+	text-decoration: none;
+	border: 1px solid #9884aa;
+	border-radius: 4px;
+	width: 140;
+	padding: 15px 10px;
+	font: 900 18px/23px 'Gatham Black' sans-serif;
+	display: block;
+	text-align: center;
+	position: relative;
+	transition: all 0.3s ease 0.3s;
+}
+
+.nav li a:after {
+	content: '';
+	margin: 0;
+	padding: 0;
+	border-style: solid;
+	border-width: 7px 8px 0 8px;
+	border-color: #f7df59 transparent transparent transparent;
+	position: absolute;
+	top: 100%;
+	left: 50%;
+	transform: translateX(-50%);
+	/*visibility: hidden;*/
+	transition: all 0.3s ease 0.3s;
+	opacity: 0;
+}
+
+.nav li a:hover {
+	background: #f7df59;
+	border-color: #f7df59;
+	box-shadow: 0px 5px 5px 0px rgba(76,47,101,1);
+}
+
+.nav li a:hover:after {
+	/*visibility: visible;*/
+	opacity: 1;
+	/*top: 100%;*/
+}
+
 
 
 .header-box {
 	background: #6c5283;
 	margin: 0 0 65px;
 	padding: 65px 0 120px;
+
+	background-image: url('../images/background_2.jpg');
+	background-repeat: repeat;
 }
 
 .header-child {
@@ -88,12 +186,26 @@ img {
 }
 
 .logo-text {
-	font: 28px "Gotham Thin", sans-serif;
+	display: inline-block;
+	padding: 0;
 	color: #fff;
+	vertical-align: middle;
+	margin: -75px 0 0 ;
 }
+
+.logo-text-top {
+	display: block;
+	padding: 0;
+	margin: 0;
+	font: 28px "Gotham Thin", sans-serif;
+}
+
 .logo-text-bottom {
-	font: 14px "Gotham Thin", sans-serif;
-	color: #fff;
+	display: block;
+	padding: 0;
+	margin: 0;
+	font: 14px "Gotham Thin", sans-serif;	
+	padding: 0 0 0 15px;	
 }
 
 .separator {
@@ -103,8 +215,8 @@ img {
 }
 
 h1 {
-	margin: 0;
-	padding: 0;
+	margin: 0; 
+	padding: 25px 0 0; 
 	font: 112px/1.15 "Gotham Black", sans-serif;
 	color: #ead7fb;
 }
@@ -130,6 +242,18 @@ h1:before {
 	font: 28px "Gotham Thin", sans-serif;
 }
 /*12 inside, 16 out*/
+.box {
+	width: 1000px;
+	height: 200px;
+	transition: all 10s ease; 
+}
+
+.box:hover {
+	width: 500px;
+	height: -100px;
+	background: green;
+	transform: scale(2);
+}
 
 h3 {
 	margin: 0;
@@ -157,13 +281,14 @@ h6 {
 	border-bottom: double;
 }
 
-/*.bottom-block:after {
-	margin: 100px auto 0;
-	padding: 0;
+.bottom-block:after {
+	margin: 0 auto 0;
+	padding: 5px 0 0;
 	width: 1140px;
 	border-bottom: 1px solid #d1d1d1;
 	border-radius: 8px;
-}*/
+	content: '';
+}
 
 .bottom-block .r-medium {
 	font-weight: 500;
@@ -180,6 +305,7 @@ h6 {
 	padding: 0 0 75px;
 	font: 300 14px/2.42 "Roboto", sans-serif;
 	color: #6d5384;
+	overflow: hidden;
 }
 
 .separator.bottom {
@@ -187,3 +313,72 @@ h6 {
 	margin: 0 0 40px;
 	border-bottom: 2px solid #6d5384;
 }
+
+.float-l {
+	float: left;
+}
+
+.float-r {
+	float: right;
+}
+
+.dbox {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.dbox:after {
+	content: '';
+	display: block;
+	clear: both;
+}
+
+.dbox li {
+	float: left;
+	position: relative;
+}
+
+.dbox li a {
+	float: left;
+	padding: 10px;
+	width: 200px;
+	text-align: center;
+	border:1px solid #cca;
+}
+
+.dbox ul {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 1s ease 0.3s;
+}
+
+.dbox ul li {
+	float: none;
+}
+
+.dbox li li a {
+	float: none;
+	opacity: 1;
+	visibility: visible;
+}
+.dbox li:hover ul {
+	opacity: 1;
+	visibility: visible;
+}
+
+.dbox li:hover a {
+	background: #ccf;
+}
+
+.dbox li:hover li a {
+	background: none;
+}
+
+
