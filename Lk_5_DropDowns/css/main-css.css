@@ -3,7 +3,7 @@
 }
 
 body {
-	margin: 0px;
+	margin: 0 auto 0;
 	width: 954px;
 	font: 17px/1.2 'Lato', sans-serif;
 	color: #333333;
@@ -23,6 +23,7 @@ nav {
     font-family: monospace;
 }
 
+
 ul {
     background: darkorange;
     list-style: none;
@@ -38,7 +39,7 @@ li {
     padding: 1rem;
     position: relative;
     text-decoration: none;
-    transition-duration: 0.5s;
+    transition-duration: 0.2s;
 }
   
 li a {
@@ -56,7 +57,7 @@ ul li ul {
   	opacity: 0;
   	min-width: 5rem;
     position: absolute;
-  	transition: all 0.5s ease;
+  	transition: all 0.3s ease;
   	margin-top: 1rem;
     left: 0;
   	display: none;
@@ -72,4 +73,9 @@ ul li ul:hover {
 ul li ul li {
     clear: both;
   	width: 100%;
+}
+
+.dropdown li .dropdown {
+	left: 100%;
+	top: 0;
 }
