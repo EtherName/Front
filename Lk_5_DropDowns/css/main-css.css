@@ -1,9 +1,9 @@
-* {
+*, *:after, *:before {
 	box-sizing: border-box;
 }
 
 body {
-	margin: auto;
+	margin: 0px;
 	width: 954px;
 	font: 17px/1.2 'Lato', sans-serif;
 	color: #333333;
@@ -15,69 +15,61 @@ img {
 	border: 0;
 }
 
-.block {
-	display: table-cell;
-	width: 33.33%;
-	border: 1px solid #fff;
-	vertical-align: middle;
+a {
+	text-decoration: none;
 }
 
-
-.dbox {
-	margin: 0;
-	padding: 0;
-	list-style: none;
+nav {
+    font-family: monospace;
 }
 
-.dbox:after {
-	content: '';
-	display: block;
-	clear: both;
+ul {
+    background: darkorange;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
 }
 
-.dbox li {
-	float: left;
-	position: relative;
+li {
+    color: #fff;
+    background: darkorange;
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+  
+li a {
+	color: #fff;
 }
 
-.dbox li a {
-	float: left;
-	padding: 10px;
-	width: 200px;
-	text-align: center;
-	border:1px solid #cca;
+li:hover {
+    background: red;
+    cursor: pointer;
 }
 
-.dbox ul {
-	position: absolute;
-	top: 100%;
-	left: 0;
-	margin: 0;
-	padding: 0;
-	list-style: none;
-	opacity: 0;
-	visibility: hidden;
-	transition: all 1s ease 0.3s;
+ul li ul {
+    background: orange;
+    visibility: hidden;
+  	opacity: 0;
+  	min-width: 5rem;
+    position: absolute;
+  	transition: all 0.5s ease;
+  	margin-top: 1rem;
+    left: 0;
+  	display: none;
 }
 
-.dbox ul li {
-	float: none;
+ul li:hover > ul,
+ul li ul:hover {
+  	visibility: visible;
+  	opacity: 1;
+  	display: block;
 }
 
-.dbox li li a {
-	float: none;
-	opacity: 1;
-	visibility: visible;
-}
-.dbox li:hover ul {
-	opacity: 1;
-	visibility: visible;
-}
-
-.dbox li:hover a {
-	background: #ccf;
-}
-
-.dbox li:hover li a {
-	background: none;
+ul li ul li {
+    clear: both;
+  	width: 100%;
 }

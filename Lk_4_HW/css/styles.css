@@ -1,4 +1,4 @@
-* {
+*, *:after, *:before {
 	box-sizing: border-box;
 }
 
@@ -172,9 +172,9 @@ img {
 	margin: 0 0 65px;
 	padding: 65px 0 0;
 	position: relative;
-
 	background-image: url('../images/background_2.jpg');
 	background-repeat: repeat;
+	
 }
 
 .header-box:after {
@@ -222,26 +222,26 @@ img {
 	width: 12px;
 	height: 12px;
 	background: #fff;
+	position: relative;
+
+	box-shadow: 1px 1px 0px 1px rgba(0,0,0, 0.3);
 }
 
 .circle a:hover {
 	background: #443255;
+	box-shadow: none;
 }
 
-.circle a:hover:befor {
-	display: block;
-	
-	border-radius: 50%;
-
-	padding: 0;
-	margin: 0;
-
+.circle a:hover:after {
+	content: '';
 	width: 16px;
 	height: 16px;
-	background: transparent;
+	position: absolute;
 	border: 1px solid #443255;
+	top: -2px;
+	left: -2px;
+	border-radius: 50%;
 }
-
 
 .logo-text {
 	display: inline-block;
